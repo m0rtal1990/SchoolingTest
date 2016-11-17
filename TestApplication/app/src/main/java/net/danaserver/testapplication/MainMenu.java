@@ -1,5 +1,6 @@
 package net.danaserver.testapplication;
 
+import android.app.Notification;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
-    private Button callButton, googleButton, logoutButton;
+    private Button callButton, googleButton, logoutButton, notificationButton;
+
+    // Creating the Notification Builder for later use in Code
+    Notification.Builder firstNotification = new Notification.Builder(this)
+            .setContentTitle("This is a Notification")
+            .setContentText("This is my first Notification (Hope you like it :D)");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +50,15 @@ public class MainMenu extends AppCompatActivity {
             public void onClick(View view) {
                 Intent logoutIntent = new Intent(view.getContext(),Login_Activity.class);   // Creating the Intent with the Context of Login_Activity in order to open it
                 startActivity(logoutIntent);                                                // Start the Login_Activity
+            }
+        });
+
+        // Setting the Notification Click Listener for the main menu
+        notificationButton = (Button)findViewById(R.id.notificationButton);
+        notificationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }

@@ -24,16 +24,19 @@
 
     <ImageView
         android:id="@+id/Nightmare_Picture"
+        android:src="@drawable/faucheuse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Nightmare_Title"/>
+        android:layout_below="@+id/Nightmare_Title"
+        android:layout_centerHorizontal="true"/>
 
 <LinearLayout
     android:id="@+id/login_Group"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerVertical="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_below="@+id/Nightmare_Picture">
 
     <TextView
         android:id="@+id/login_introduce"

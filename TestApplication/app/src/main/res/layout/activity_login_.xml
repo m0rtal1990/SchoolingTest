@@ -8,17 +8,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/Black_Color"
     tools:context="net.danaserver.testapplication.Login_Activity">
 
     <TextView
         android:id="@+id/Nightmare_Title"
         android:text="Welcome to the Nightmare"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:textSize="25dp"
-        android:textStyle="bold"
         />
+
+    <ImageView
+        android:id="@+id/Nightmare_Picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Nightmare_Title"/>
+
 <LinearLayout
     android:id="@+id/login_Group"
     android:layout_width="wrap_content"
@@ -29,6 +38,7 @@
     <TextView
         android:id="@+id/login_introduce"
         android:text="Login : "
+        android:textColor="@android:color/holo_red_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -37,6 +47,7 @@
     <EditText
         android:id="@+id/login_text"
         android:hint="@string/Login_Text"
+        android:textColorHint="@color/colorPurple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
@@ -44,6 +55,8 @@
 
         android:id="@+id/password_introduce"
         android:text="Mot de passe : "
+        android:textColor="@android:color/holo_red_dark"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
@@ -52,17 +65,22 @@
     <EditText
         android:id="@+id/password_text"
         android:hint="@string/Password_Text"
+        android:textColorHint="@color/colorPurple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
 </LinearLayout>
 
     <Button
+        android:text="@string/connection_Button"
+        android:textColor="@android:color/holo_red_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/connection_Button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:background="@color/colorPurple"
+
+
         />
 
 

@@ -1,25 +1,30 @@
 package net.danaserver.testapplication;
 
 import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 public class MainMenu extends AppCompatActivity {
     private Button callButton, googleButton, logoutButton, notificationButton;
-
-    // Creating the Notification Builder for later use in Code
-    Notification.Builder firstNotification = new Notification.Builder(this)
-            .setContentTitle("This is a Notification")
-            .setContentText("This is my first Notification (Hope you like it :D)");
+    private NotificationManager mNotificationManager;
+    private Notification.Builder firstNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
+
+        firstNotification = new Notification.Builder(this)
+                .setSmallIcon(R.drawable.faucheuse)
+                .setContentTitle("This is a Notification")
+                .setContentText("This is my first Notification (Hope you like it :D)");
+        mNotificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
 
         // Setting Call Click Listener for the main menu
         callButton = (Button)findViewById(R.id.callButton);
@@ -58,7 +63,7 @@ public class MainMenu extends AppCompatActivity {
         notificationButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                mNotificationManager.notify(0, firstNotification.build());
             }
         });
     }

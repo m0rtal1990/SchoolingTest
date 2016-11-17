@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comment survivre ?"
+        android:text="Main Menu"
         android:textSize="20sp"
         android:textColor="@android:color/holo_red_dark"
         android:gravity="center_horizontal"/>
@@ -27,7 +27,7 @@
         android:id="@+id/googleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Find a cop"/>
+        android:text="Google Maps"/>
     <Button
         android:id="@+id/logoutButton"
         android:layout_width="wrap_content"

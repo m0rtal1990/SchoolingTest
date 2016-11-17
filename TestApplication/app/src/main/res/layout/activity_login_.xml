@@ -19,8 +19,7 @@
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_centerHorizontal="true"/>
 
     <ImageView
         android:id="@+id/Nightmare_Picture"
@@ -32,7 +31,7 @@
 
 <LinearLayout
     android:id="@+id/login_Group"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_centerVertical="true"
     android:orientation="vertical"
@@ -40,12 +39,11 @@
 
     <TextView
         android:id="@+id/login_introduce"
-        android:text="Login : "
+        android:text="Login:"
         android:textColor="@android:color/holo_red_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-    />
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/login_text"
@@ -53,17 +51,16 @@
         android:textColorHint="@color/colorPurple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:textSize="12sp"
+        android:textColor="@android:color/white"/>
     <TextView
 
         android:id="@+id/password_introduce"
         android:text="Mot de passe : "
         android:textColor="@android:color/holo_red_dark"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/password_text"
@@ -71,7 +68,8 @@
         android:textColorHint="@color/colorPurple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:textSize="12sp"
+        android:textColor="@android:color/white"/>
 </LinearLayout>
 
     <Button
@@ -81,10 +79,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:background="@color/colorPurple"
-
-
-        />
-
-
+        android:background="@color/colorPurple"/>
 </RelativeLayout>

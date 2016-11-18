@@ -53,8 +53,8 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:textColor="@android:color/white"/>
-    <TextView
 
+    <TextView
         android:id="@+id/password_introduce"
         android:text="Mot de passe : "
         android:textColor="@android:color/holo_red_dark"
@@ -73,6 +73,7 @@
 </LinearLayout>
 
     <Button
+        android:id="@+id/loginButton"
         android:text="@string/connection_Button"
         android:textColor="@android:color/holo_red_dark"
         android:layout_width="wrap_content"
